@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Module 03 Assignment</title>
+</head>
+<body>
+  <script>
+    alert("Welcome to the program!");
+
+    //task 1: odd-even count number
+    document.write("<br>---- Odd-Even Count number ----");
+    // Loop from 0 to 10
+    for (let count = 0; count <= 10; count++) {
+      if (count % 2 === 0) {
+        // If the current number is even
+        document.write("<br> Count " + count + " is even");
+      } else {
+        // If the current number is odd
+        document.write("<br> Count " + count + " is odd");
+      }
+    }
+
+    //tast 2: loop counter
+    document.write("<br>");
+    document.write("<br>---- Loop Counter ----");
+    //ask the user for a number between 5 and 20
+    var myNum = prompt("Please enter a number between 5 and 20");
+    var i = 1;
+    //loop trhough number until the count matches var myNum
+    do {
+      document.write("<br>The number is now: " + i );
+      i++;
+    }
+    while (i <= myNum);
+
+  //task 3: Display Array Values
+
+
+  const subjects = [
+      "Accounting",
+      "Algebra",
+      "Programming",
+      "Art",
+      "Data Analytics"
+    ];
+
+    //  Display array values using forEach()
+    document.write("<br>");
+    document.write("<br> ----Subjects using forEach(): ----<br>");
+    subjects.forEach(function(subject) {
+      document.write(subject + "<br>");
+    });
+
+    // Display array values separated by commas
+    document.write("<br>----Subjects separated by commas: ---- <br> ");
+    document.write(subjects.join(", "));
+
+
+  </script>
+</body>
+</html>
